@@ -1,0 +1,24 @@
+.app-button {
+  background-color: #{$color-blue};
+  color: #{$color-white};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.brown {
+    background-color: #{$color-brown};
+  }
+
+  &:hover {
+    color: #{$color-white};
+    opacity: 0.9;
+  }
+
+  &.disabled {
+    &:hover {
+      color: #{$color-white};
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+  }
+}
